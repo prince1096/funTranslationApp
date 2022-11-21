@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 810px;
+  /* background-image: linear-gradient
+    (to bottom, var(--primary-color), var(--secondary-color)); */
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 234, 0, 0.7),
+    rgba(255, 234, 0, 0.2)
+  );
+  font-family: "Radio Canada", sans-serif;
+}
+
+.input-text {
+  border-color: solid black;
+  border-width: 3px;
+  border-radius: 10px;
+  background-color: white;
+  /* outline: none; */
+  height: 180px;
+  margin: 15px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav {
+  font-size: 40px;
+  padding: 10px;
+  margin: 15px;
+}
+
+.button {
+  background-color: rgba(255, 234, 0, 1);
+  font-size: 28px;
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid black;
+}
+
+.footer {
+  text-align: center;
+  width: 30%;
+}
