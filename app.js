@@ -10,6 +10,7 @@ function errorHandler(error) {
 
 function getTranslation(text) {
   return serverURL + "?" + "text=" + text;
+  // return serverURL + text;
 }
 
 function clickEventHandler() {
@@ -23,6 +24,7 @@ function clickEventHandler() {
   fetch(getTranslation(inputText))
     .then((response) => response.json())
     .then((json) => {
+      console.log(json);
       var finalText = json.contents.translated;
       outputArea.innerText = finalText;
     })
